@@ -28,6 +28,10 @@ $(function(){
     audio.play()
     $('.dis-container').addClass('playing')
   }
+  audio.onended = function(){
+    $('.dis-container').removeClass('playing')
+  }
+
   $('.icon-pause').on('click',function(){
     audio.pause()
     $('.dis-container').removeClass('playing')
@@ -36,4 +40,6 @@ $(function(){
     audio.play()
     $('.dis-container').addClass('playing')
   })
+
+
 })
