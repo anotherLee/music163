@@ -1,0 +1,44 @@
+*{ padding:0; margin:0; box-sizing:border-box; }
+*::after, *::before{ padding:0; margin:0; box-sizing:border-box; }
+
+@keyframes rotate{
+  0%{
+    transform:rotate(0deg);
+  }
+  100%{
+    transform:rotate(360deg);
+  }
+}
+body{
+  position:relative;
+  z-index:-5;
+}
+.page{ display:flex; flex-direction:column; height:100vh; background: url('images/cover.png') center no-repeat; background-size:cover; position:relative; z-index:-2; }
+.page:after{ /*display:none;*/ content:''; position:absolute; width:100%; height:100%; background-color: black; opacity:0.5; z-index:-1; }
+
+.dis-container{ position:relative; z-index: 0; }
+.dis-container > .pointer{ width:25vw; display:inline-block; position:absolute; left:43%; z-index:1; transform:rotate(-20deg); transform-origin: 10% 0; transition:all 1s; }
+.dis-container.playing > .pointer{ transform:rotate(0deg); transform-origin: 10% 0; transition:all 1s;}
+.dis-container > .disc{ display:flex; justify-content:center; align-items:center; margin-top:18vw;}
+.dis-container > .disc > .icon{ position:absolute; fill:white; width:15vw;height:15vw; z-index:1;}
+.dis-container > .disc > .ring{ width:80vw; }
+.dis-container > .disc > .light{ width:80vw; position:absolute;}
+.dis-container > .disc > .cover { width:50vw; position:absolute; z-index:-1;}
+.dis-container > .disc > .icon-pause{ display:none; }
+.dis-container > .disc > .icon-play{ display:block; }
+.dis-container.playing > .disc > .icon-play{ display:none; }
+.dis-container.playing > .disc > .icon-pause{ display:block; }
+.dis-container.playing > .disc > .light{ animation:rotate 10s infinite linear;}
+.dis-container.playing > .disc > .cover{ animation:rotate 10s infinite linear; }
+
+.song-description{ margin-top:5.5vw; color:#A2A3A5; text-align:center; flex-grow:1; }
+.song-description > h2{ font-size:18px; color:white; }
+.song-description > .lyric{ margin-top:4vw; height:72px; overflow:hidden; }
+.song-description > .lyric >.lines{ transform:translateY(0px); }
+.song-description p{ font-size:16px; line-height:24px; }
+
+
+
+.links{ display:flex; justify-content:center; align-items:center; }
+.links > a{ border:1px solid #D43B32; border-radius:1vw; width:39vw; height:10vw; text-align:center; font-size:15px; color:#D43B32; text-decoration:none; line-height:2.2; margin:1.2em 0.4em; letter-spacing:6px; }
+.links >a.active{ background:#D43B32; color:white; }
