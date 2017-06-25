@@ -22,14 +22,14 @@ body{
 .dis-container > .disc{ display:flex; justify-content:center; align-items:center; margin-top:18vw;}
 .dis-container > .disc > .icon{ position:absolute; fill:white; width:15vw;height:15vw; z-index:1;}
 .dis-container > .disc > .ring{ width:80vw; }
-.dis-container > .disc > .light{ width:80vw; position:absolute;}
-.dis-container > .disc > .cover { width:50vw; position:absolute; z-index:-1;}
+.dis-container > .disc > .light{ width:80vw; position:absolute; animation:rotate 10s infinite linear; animation-play-state: paused;}
+.dis-container > .disc > .cover { width:50vw; position:absolute; z-index:-1;animation:rotate 10s infinite linear; animation-play-state: paused}
 .dis-container > .disc > .icon-pause{ display:none; }
 .dis-container > .disc > .icon-play{ display:block; }
 .dis-container.playing > .disc > .icon-play{ display:none; }
 .dis-container.playing > .disc > .icon-pause{ display:block; }
-.dis-container.playing > .disc > .light{ animation:rotate 10s infinite linear;}
-.dis-container.playing > .disc > .cover{ animation:rotate 10s infinite linear; }
+.dis-container.playing > .disc > .light{ animation-play-state: running; }
+.dis-container.playing > .disc > .cover{ animation-play-state: running; }
 
 .song-description{ margin-top:5.5vw; color:#A2A3A5; text-align:center; flex-grow:1; }
 .song-description > h2{ font-size:18px; color:white; }
