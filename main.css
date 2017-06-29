@@ -59,12 +59,11 @@ body{
 .dis-container.playing > .disc > .light{ animation-play-state: running; }
 .dis-container.playing > .disc > .cover{ animation-play-state: running; }
 
-.song-description{ margin-top:5.5vw; color:#A2A3A5; text-align:center; flex-grow:1; }
+.song-description{ margin-top:5.5vw; color:#A2A3A5; text-align: center; flex-grow:1; }
 .song-description > h2{ font-size:4.8vw; color:white; }
 .song-description > .lyric{ margin-top:4vw; height:19.8vw; overflow:hidden; }
 .song-description > .lyric >.lines{ transform:translateY(0px); transition:transform .3s;}
 .song-description p{ font-size:4.2vw; line-height:6.6vw; padding:0 10.6vw;}
-
 
 
 
