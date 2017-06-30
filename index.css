@@ -129,6 +129,8 @@ section > h3:first-child{ font-size:4.5vw; font-weight:normal; line-height:1; bo
 
 
 /*begin of 搜索*/
+
+
 .search > form{
     border-bottom:1px solid #EBECEC;
     text-align:center;
@@ -196,6 +198,25 @@ section > h3:first-child{ font-size:4.5vw; font-weight:normal; line-height:1; bo
     display: inline;
 }
 
+.searchLabels > .hotSearch{
+    display:inline-block;
+    font-size:12px;
+    color:#666669;
+    padding:15px 0 0 10px;
+}
+.searchLabels > .labels{
+    padding:15px 10px 0;
+}
+.searchLabels > .labels > .songLabel{
+    display:inline-block;
+    text-decoration:none;
+    font-size:14px;
+    border:1px solid #EAEBEE;
+    color:#333;
+    padding:4px 14px;
+    margin-bottom:10px;
+    border-radius:16px;
+}
 
 
 
