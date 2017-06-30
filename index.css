@@ -93,6 +93,9 @@ section > h3:first-child{ font-size:4.5vw; font-weight:normal; line-height:1; bo
     left:2.66vw;
     font-size:4.53vw;
 }
+.hotSongs > .songList > li > .active{
+    color:#DF3436;
+}
 .hotSongs > .songList > li > .songInformation{
     width:100%;
     padding: 2.4vw 0;

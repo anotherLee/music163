@@ -1,9 +1,17 @@
 $(function(){
 
-  var {search} = location
-  var queryId = Number(search.split('=')[1])
+  var {search} = location;
+  console.log('search: ' + search);
+  var queryId = Number(search.split('=')[1]);
+  console.log('queryId: ' + queryId);
+  var requestPath
+  if(queryId >= 100){
+    requestPath = './hotsongs.json';
+  }else{
+    requestPath = './songs.json';
+  }
 
-  $.get('./songs.json').then(function(response){
+  $.get(requestPath).then(function(response){
     let item = response.filter(function(i){
       if(queryId === i.id){
         return i

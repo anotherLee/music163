@@ -19,6 +19,7 @@ $(function(){
     alert('请求失败！')
   });
 
+
   $('.siteNav').on('click','.tabItems > li',function(e){
     let $li = $(e.currentTarget);
     let index = $li.index();
@@ -32,20 +33,43 @@ $(function(){
     if($li.attr('data-download') === 'yes'){
       return
     }
-    // if(index === 1){
-    //   $.get('./page2.json').then(function(response){
-    //     $li.text(response.content).attr('data-download','yes');
-    //   },function(){
-    //     alert('失败了！')
-    //   })
-    // };
-    // if(index === 2){
-    //   $.get('./page3.json').then(function(response){
-    //     $li.text(response.content).attr('data-download','yes');
-    //   },function(){
-    //     alert('失败了！')
-    //   })
-    // }
+
+
+    if(index === 1){
+      $.get('./hotsongs.json').then(function(response){
+        response.forEach(function(i,index){
+          let $item = $(`
+            <li>
+              <span class="rank">${i.rank}</span>
+              <div class="songInformation">
+                <h3>
+                  <a href="main.html?id=" + ${i.id} class="songName">
+                    ${i.name}
+                  </a>
+                </h3>
+                <p>演唱者1-${i.name}</p>
+                <a href="main.html?id=${i.id}" ></a>
+              </div>
+            </li>
+          `)
+          $item.appendTo($('.hotSongs > .songList'));
+          if(index <=2 ){ $('.rank').addClass('active') } ;
+          $li.attr('data-download','yes');
+        })
+
+      },function(){
+        alert('失败了！')
+      })
+    };
+
+
+    if(index === 2){
+      $.get('./page3.json').then(function(response){
+        $li.text(response.content).attr('data-download','yes');
+      },function(){
+        alert('失败了！')
+      })
+    }
   })
 
 })
