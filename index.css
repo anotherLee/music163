@@ -44,6 +44,7 @@ section > h3:first-child{ font-size:4.5vw; font-weight:normal; line-height:1; bo
 
 
 
+/*begin of 热歌榜*/
 
 
 .banner > .poster{
@@ -124,4 +125,90 @@ section > h3:first-child{ font-size:4.5vw; font-weight:normal; line-height:1; bo
     transform:translateY(-50%);
     cursor:pointer;
 }
+
+
+
+/*begin of 搜索*/
+.search > form{
+    border-bottom:1px solid #EBECEC;
+    text-align:center;
+}
+.search > form > .inputWrap{
+    padding:0 8vw;
+    width:94.6vw;
+    margin:4vw auto;
+    border-radius:4vw;
+    background:#EBECEC;
+    position:relative;
+}
+.search > form .input{
+    min-height:8vw;
+    width:78.6vw;
+    background:#EBECEC;
+    border:none;
+    /*border-radius:4vw 4vw 4vw 4vw;*/
+    outline:none;
+    position:relative;
+    font-size:4vw;
+    line-height:4.8vw;
+}
+.search > form .input::-webkit-input-placeholder{
+    font-size:4vw;
+    color:#C9C9C9;
+
+}
+.search > form .input::-moz-placeholder {
+    font-size:15px;
+    color:#C9C9C9;
+}
+.search > form .input::-ms-input-placeholder{
+    font-size:15px;
+    color:#C9C9C9;
+}
+.search > form .input{
+    -webkit-appearance: none;
+}
+.search > form .input::-webkit-search-cancel-button{
+    display:none;
+}
+.search > form .input::-webkit-search-decoration {
+    /*display:none;*/
+    color:white;
+    border:1px solid red;
+}
+.search > form > .inputWrap > .iconSearch{
+    width:18px;
+    height:18px;
+    position:absolute;
+    top:6px;
+    left:6px;
+    fill:#C9C9CA;
+}
+.search > form > .inputWrap > .iconClose {
+    width:8vw;
+    height:8vw;
+    position:absolute;
+    right:0;
+    top:0;
+    display:none;
+}
+.search > form > div.inputChange > .iconClose{
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

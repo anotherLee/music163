@@ -33,8 +33,6 @@ $(function(){
     if($li.attr('data-download') === 'yes'){
       return
     }
-
-
     if(index === 1){
       $.get('./hotsongs.json').then(function(response){
         response.forEach(function(i,index){
@@ -63,14 +61,31 @@ $(function(){
     };
 
 
-    if(index === 2){
-      $.get('./page3.json').then(function(response){
-        $li.text(response.content).attr('data-download','yes');
-      },function(){
-        alert('失败了！')
-      })
+
+    // if(index === 2){
+    //   $.get('./page3.json').then(function(response){
+    //     $li.text(response.content).attr('data-download','yes');
+    //   },function(){
+    //     alert('失败了！')
+    //   })
+    // }
+  });
+
+  let $input = $('.input');
+  let $inputWrap = $('.inputWrap');
+  $input.on('input', function(){
+    $inputWrap.addClass('inputChange');
+    if ($input.val() === '') {
+      $inputWrap.removeClass('inputChange')
     }
+  });
+
+  $('.iconClose').on('click',function(){
+    $input.val('');
+    $inputWrap.removeClass('inputChange');
   })
+
+
 
 })
 
