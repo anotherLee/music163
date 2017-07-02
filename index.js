@@ -1,7 +1,7 @@
 $(function(){
   $.get('./songs.json').then(function(response){
-    console.log(response)
-    console.log(typeof response)
+    // console.log(response)
+    // console.log(typeof response)
     if(typeof response === 'string'){
       let $div = $('div');
       $div.text(response).appendTo($('#latestMusicList'))
@@ -18,7 +18,6 @@ $(function(){
   },function(){
     alert('请求失败！')
   });
-
 
   $('.siteNav').on('click','.tabItems > li',function(e){
     let $li = $(e.currentTarget);
@@ -51,38 +50,114 @@ $(function(){
             </li>
           `)
           $item.appendTo($('.hotSongs > .songList'));
-          if(index <=2 ){ $('.rank').addClass('active') } ;
+          if(index <=2 ){ $('.rank').addClass('active') };
           $li.attr('data-download','yes');
         })
 
       },function(){
         alert('失败了！')
+      });
+
+    }
+
+  })
+
+
+
+
+  function search(word){
+    return new Promise(function(resolve,reject){
+      var database = [
+        {"id":1,"name":"长安忆"},
+        {"id":2, "name":"Rage Your Dream"},
+        {"id":3, "name":"Drowning"},
+        {"id":4, "name":"心愿"},
+        {"id":5, "name":"传奇"},
+        {"id":6, "name":"你曾是少年"},
+        {"id":7, "name":"喜欢你"},
+        {"id":8, "name":"流年"},
+        {"id":9, "name":"相逢是首歌"},
+        {"id":10, "name":"爱情转移"},
+        {"id":100, "name":"believe"},
+        {"id":200, "name":"成都"},
+        {"id":300, "name":"七月上"},
+        {"id":400, "name":"恋人心"},
+        {"id":500, "name":"追光者"},
+        {"id":600, "name":"童话镇"},
+        {"id":700, "name":"岁月神偷"},
+        {"id":800, "name":"Faded"},
+        {"id":900, "name":"春风十里"},
+        {"id":1000, "name":"历历万乡"}
+
+      ];
+      let result = database.filter(function(i){
+        return i.name.indexOf(word) >= 0
+      });
+      if(result.length !== 0){
+        setTimeout(function(){
+          resolve(result)
+        }, ~~Math.random()*1000)
+      }else{
+        setTimeout(function(){
+          reject(result)
+        },~~Math.random()*1000)
+      }
+
+
+    })
+
+  }
+
+
+  let clock = undefined;
+
+  $('.input').on('input',function(e){
+    let $input = $(e.currentTarget);
+    let value = $input.val().trim();
+    if(value === ''){return}
+
+    if(clock){
+      clearTimeout(clock)
+    }
+    clock = setTimeout(function(){
+      search(value).then(function(result){
+        $('.resultList').children().eq(1).text('')
+        let searchResults = result.map((i)=>{return i.name})   //符合条件的搜索结果不只是一个,一会再优化
+        searchResults.forEach((item,index)=>{
+          $('.resultList').children().eq(index + 1).text(item)
+        })
+      },function(){
+        console.log('没有结果')
+        $('.resultList').children().not('.searchCue').text('')
+        $('.resultList').children().eq(1).text('没有结果');
       })
-    };
 
+    },500)
+  })
 
-
-    // if(index === 2){
-    //   $.get('./page3.json').then(function(response){
-    //     $li.text(response.content).attr('data-download','yes');
-    //   },function(){
-    //     alert('失败了！')
-    //   })
-    // }
-  });
 
   let $input = $('.input');
   let $inputWrap = $('.inputWrap');
+  let $reslutList = $('.resultList');
+  let $searchCue = $('.searchCue');
+
   $input.on('input', function(){
+    let value = $input.val().trim();
     $inputWrap.addClass('inputChange');
+    $searchCue.text(`搜索：\"${value}\"`)
+    $reslutList.append($searchCue).addClass('inputChanged')
+
     if ($input.val() === '') {
       $inputWrap.removeClass('inputChange')
+      $reslutList.removeClass('inputChanged')
+
     }
   });
 
   $('.iconClose').on('click',function(){
     $input.val('');
     $inputWrap.removeClass('inputChange');
+    $reslutList.removeClass('inputChanged')
   })
 
 

@@ -198,6 +198,29 @@ section > h3:first-child{ font-size:4.5vw; font-weight:normal; line-height:1; bo
     display: inline;
 }
 
+/*begin of 搜索结果展示*/
+
+.result > .resultList{
+    display:none;
+    padding:3vw;
+    width:100%;
+    min-height:43vw;
+    position:absolute;
+    background:white;
+}
+.result > .inputChanged{
+    display:block;
+}
+.result > .resultList >li{
+    padding-bottom:2vw;
+}
+.result > .resultList > li.searchCue{
+    color:#507DAF;
+}
+
+
+
+
 .searchLabels > .hotSearch{
     display:inline-block;
     font-size:12px;

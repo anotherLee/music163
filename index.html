@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-Hans">
 <head>
   <meta charset="UTF-8">
@@ -426,7 +426,7 @@
       <section class="search">
         <form action="#" method="get">
           <div class="inputWrap">
-            <input type="search" name="search" class="input" placeholder="搜索歌曲、歌手、专辑">
+            <input type="search" name="search" class="input" autocomplete="off" placeholder="搜索歌曲、歌手、专辑">
             <svg class="iconSearch" aria-hidden="true">
               <use xlink:href="#icon-search"></use>
             </svg>
@@ -436,6 +436,15 @@
 
           </div>
         </form>
+      </section>
+
+      <section class="result">
+        <ol class="resultList">
+          <li class="searchCue">搜索</li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
       </section>
 
       <section class="searchLabels">
