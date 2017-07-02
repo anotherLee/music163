@@ -214,6 +214,10 @@ section > h3:first-child{ font-size:4.5vw; font-weight:normal; line-height:1; bo
 .result > .resultList >li{
     padding-bottom:2vw;
 }
+.result > .resultList a{
+    color:inherit;
+    text-decoration:none;
+}
 .result > .resultList > li.searchCue{
     color:#507DAF;
 }

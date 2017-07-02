@@ -121,15 +121,16 @@ $(function(){
     }
     clock = setTimeout(function(){
       search(value).then(function(result){
-        $('.resultList').children().eq(1).text('')
-        let searchResults = result.map((i)=>{return i.name})   //符合条件的搜索结果不只是一个,一会再优化
-        searchResults.forEach((item,index)=>{
-          $('.resultList').children().eq(index + 1).text(item)
+        console.log(result)
+        $('.resultList a').text('')
+        // let searchResults = result.map((i)=>{return i.name})   //符合条件的搜索结果不只是一个,一会再优化
+        result.forEach((item,index)=>{
+          $('.resultList a').eq(index).text(item.name).attr('href','main.html?id=' + item.id);
         })
       },function(){
         console.log('没有结果')
-        $('.resultList').children().not('.searchCue').text('')
-        $('.resultList').children().eq(1).text('没有结果');
+        $('.resultList a').text('')
+        $('.resultList a').eq(0).text('没有结果');
       })
 
     },500)
@@ -145,7 +146,7 @@ $(function(){
     let value = $input.val().trim();
     $inputWrap.addClass('inputChange');
     $searchCue.text(`搜索：\"${value}\"`)
-    $reslutList.append($searchCue).addClass('inputChanged')
+    $reslutList.addClass('inputChanged')
 
     if ($input.val() === '') {
       $inputWrap.removeClass('inputChange')
