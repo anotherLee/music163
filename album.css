@@ -1,0 +1,208 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+*::after, *::before{margin:0;padding:0;box-sizing: border-box;}
+h1,h2,h3{font-weight: normal;}
+ul,ol{list-style: none;}
+
+/*begin of banner*/
+
+
+.banner > .wrapper{
+    position:relative;
+    overflow:hidden;
+}
+.banner > .wrapper >.layer{
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    background-image: url('https://ooo.0o0.ooo/2017/07/02/5958b2c917be4.jpeg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    filter:blur(20px);
+    z-index:-2;
+}
+.banner > .wrapper::before{
+    content:'';
+    position:absolute;
+    right:0;
+    bottom:0;
+    left:0;
+    top:0;
+    background:rgba(0,0,0,0.05);
+    z-index:-1;
+}
+.banner > .wrapper >.tag{
+    font-size:12px;
+    color:white;
+    background:#DD5755;
+    position:absolute;
+    padding:0 2vw;
+    border-radius:0 2.1vw 2.1vw 0;
+    left:4.3vw;
+    top:11vw;
+    z-index:1;
+}
+.banner > .wrapper >.cover{
+    position:absolute;
+    width:33.6vw;
+    left:4.3vw;
+    top:8.2vw;
+
+}
+.banner > .wrapper >.information{
+    /*max-width:100%;*/
+    padding:8vw 3.2vw 16vw 41vw;
+    color:white;
+}
+.banner > .wrapper >.information > .title{
+    font-size:4.5vw;
+}
+.banner > .wrapper >.information > .author{
+    margin-top:5.3vw;
+}
+.banner > .wrapper >.information >.author > .avatar{
+    max-width:8vw;
+    max-height:8vw;
+    border-radius:50%;
+    vertical-align:bottom;
+}
+.banner > .wrapper >.information >.author > .authorName{
+    display:inline-block;
+    color:#C0BBBA;
+    font-size:3.7vw;
+    padding:1.4vw 0;
+}
+
+/*end of banner*/
+
+/*begin of introduce*/
+
+
+.introduce{
+    padding:0 4.3vw;
+    color:#666;
+}
+.introduce > .label{
+    margin:2.6vw 0;
+    font-size:3.7vw;
+}
+.introduce > .label >a{
+    font-size:3.2vw;
+    padding:0 2vw;
+    color:inherit;
+    text-decoration: none;
+    border:1px solid #DFDFDF;
+    border-radius:2.6vw;
+    /*transform:scale(0.5);*/
+}
+.introduce > .textIntroduce{
+    font-size:3.7vw;
+    padding-bottom:4.8vw;
+}
+
+
+/*end of introduce*/
+
+/*begin of playList*/
+
+.playList > .list{
+    font-size: 3.2vw;
+    padding:0 2.7vw;
+    color:#9AA9BA;
+}
+
+.playList > .songList > li{
+    display:flex;
+    align-items:center;
+    position:relative;
+    padding-left:9vw;
+}
+.playList > .songList > li > .rank{
+    position:absolute;
+    left:4vw;
+    font-size:4.53vw;
+    color:#999999
+}
+.playList > .songList > li > .active{
+    color:#DF3436;
+}
+.playList > .songList > li > .songInformation{
+    width:100%;
+    padding: 2.4vw 0;
+    border-bottom:1px solid #F1F1F2;
+}
+.playList > .songList > li > .songInformation .songName{
+    font-size:4.53vw;
+    text-decoration:none;
+    color:inherit;
+    display:block;
+}
+.playList > .songList > li > .songInformation > p {
+    font-size:3.2vw;
+    color:#888888;
+}
+.playList > .songList > li > .songInformation > a{
+    min-width:5.9vw;
+    min-height:5.9vw;
+    border-radius:50%;
+    background-image:url('https://ooo.0o0.ooo/2017/06/29/5954a7952612e.png');
+    background-size:44.2vw 25.8vw;
+    background-position:-6.5vw 0;
+    position:absolute;
+    top:50%;
+    right:5vw;
+    transform:translateY(-50%);
+    cursor:pointer;
+}
+
+
+/*end of playList*/
+
+/*begin of collect*/
+
+.collect{
+    padding:3.3vw 0;
+    position:absolute;
+    width:100%;
+    text-align:center;
+    position:absolute;
+    border-top:1px solid #ccc;
+    background-color:#fff;
+}
+.collect em{
+    display:inline-block;
+    background:#CD3830;
+    border-radius:5vw;
+    margin:0 auto;
+}
+.collect a{
+    display:inline-block;
+    color:white;
+    text-decoration:none;
+    font-style:normal;
+    padding:2vw 30vw;
+    position:relative;
+}
+.collect a::before{
+    display:inline-block;
+    content:'';
+    position:absolute;
+    min-width:6.4vw;
+    min-height:6.4vw;
+    left:23.5vw;
+    background-image:url(https://ooo.0o0.ooo/2017/07/02/595911aa057e0.png);
+    background-position:-26.6vw 0;
+    background-size:33.3vw auto;
+}
+
+
+
+
+
+
+
+
+
+

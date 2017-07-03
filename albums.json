@@ -1,0 +1,164 @@
+[
+  [
+    {
+      "id":"a1",
+      "coverUrl":"https://ooo.0o0.ooo/2017/06/28/5953259941a3d.png",
+      "avatarUrl":"https://ooo.0o0.ooo/2017/07/02/5958d3f70d626.png",
+      "title":"「造语歌」穿透灵魂 如唱诗般空灵唯美♪",
+      "author":"这是一个人",
+      "firstLabel":"流行",
+      "secondLabel":"经典",
+      "thirdLabel":"乡村",
+      "introduce":"简介：2017年上半年，全站热度飙升最快的50首2017年前上架的歌曲。"
+    },
+    [
+      { "id": "a1", "rank": 1, "name": "暧昧", "singer":"薛之谦"},
+      { "id": "a1", "rank": 2, "name": "暧昧", "singer":"薛之谦"},
+      { "id": "a1", "rank": 3, "name": "暧昧", "singer":"薛之谦"},
+      { "id": "a1", "rank": 4, "name": "暧昧", "singer":"薛之谦"},
+      { "id": "a1", "rank": 5, "name": "暧昧", "singer":"薛之谦"},
+      { "id": "a1", "rank": 6, "name": "暧昧", "singer":"薛之谦"},
+      { "id": "a1", "rank": 7, "name": "暧昧", "singer":"薛之谦"},
+      { "id": "a1", "rank": 8, "name": "暧昧", "singer":"薛之谦"},
+      { "id": "a1", "rank": 9, "name": "暧昧", "singer":"薛之谦"},
+      { "id": "a1", "rank": 10, "name": "暧昧", "singer":"薛之谦"}
+
+    ]
+  ],
+  [
+    {
+      "id":"a2",
+      "coverUrl":"https://ooo.0o0.ooo/2017/06/28/595325a936219.png",
+      "avatarUrl":"https://ooo.0o0.ooo/2017/07/03/59591fcf11527.png",
+      "title":"千秋中华史，每朝一支曲",
+      "author":"千秋中华史",
+      "firstLabel":"古典",
+      "secondLabel":"中国风",
+      "thirdLabel":"经典",
+      "introduce":"简介：搜集了中国历史上的古风，古曲，十分好听的一些中国风歌曲。"
+    },
+    [
+      { "id": "a2", "rank": 1, "name": "锦鲤抄", "singer":"银临"},
+      { "id": "a2", "rank": 2, "name": "锦鲤抄", "singer":"银临"},
+      { "id": "a2", "rank": 3, "name": "锦鲤抄", "singer":"银临"},
+      { "id": "a2", "rank": 4, "name": "锦鲤抄", "singer":"银临"},
+      { "id": "a2", "rank": 5, "name": "锦鲤抄", "singer":"银临"},
+      { "id": "a2", "rank": 6, "name": "锦鲤抄", "singer":"银临"},
+      { "id": "a2", "rank": 7, "name": "锦鲤抄", "singer":"银临"},
+      { "id": "a2", "rank": 8, "name": "锦鲤抄", "singer":"银临"},
+      { "id": "a2", "rank": 9, "name": "锦鲤抄", "singer":"银临"},
+      { "id": "a2", "rank": 10, "name": "锦鲤抄", "singer":"银临"}
+
+    ]
+
+  ],
+  [
+    {
+      "id":"a3",
+      "coverUrl":"https://ooo.0o0.ooo/2017/06/28/595325a93fbca.png",
+      "avatarUrl":"https://ooo.0o0.ooo/2017/07/03/59599f09abea2.png",
+      "title":"Trap Remix丨当欧美热单遇上毒性低音",
+      "author":"哦哦了",
+      "firstLabel":"欧美",
+      "secondLabel":"热烈",
+      "thirdLabel":"女声",
+      "introduce":"简介：展示了欧美专区的一些低音典范，非常值得一听的热门歌单，这就是你想要的东西。"
+    },
+    [
+      { "id": "a3", "rank": 1, "name": "cry on my shoulder", "singer":"westorn boys"},
+      { "id": "a3", "rank": 2, "name": "cry on my shoulder", "singer":"westorn boys"},
+      { "id": "a3", "rank": 3, "name": "cry on my shoulder", "singer":"westorn boys"},
+      { "id": "a3", "rank": 4, "name": "cry on my shoulder", "singer":"westorn boys"},
+      { "id": "a3", "rank": 5, "name": "cry on my shoulder", "singer":"westorn boys"},
+      { "id": "a3", "rank": 6, "name": "cry on my shoulder", "singer":"westorn boys"},
+      { "id": "a3", "rank": 7, "name": "cry on my shoulder", "singer":"westorn boys"},
+      { "id": "a3", "rank": 8, "name": "cry on my shoulder", "singer":"westorn boys"},
+      { "id": "a3", "rank": 9, "name": "cry on my shoulder", "singer":"westorn boys"},
+      { "id": "a3", "rank": 10, "name": "cry on my shoulder", "singer":"westorn boys"}
+
+    ]
+
+  ],
+  [
+    {
+      "id":"a4",
+      "coverUrl":"https://ooo.0o0.ooo/2017/06/28/595325a942767.png",
+      "avatarUrl":"https://ooo.0o0.ooo/2017/07/03/5959a07c295dc.png",
+      "title":"「古风」最值得单曲循环的古风歌合集",
+      "author":"活在水里的猫",
+      "firstLabel":"古典",
+      "secondLabel":"中国风",
+      "thirdLabel":"传统",
+      "introduce":"简介：这是一个古风合集，搜集了众多中国风和游戏唯美的插曲和纯音乐，十分唯美动听。"
+    },
+    [
+      { "id": "a4", "rank": 1, "name": "眉间雪", "singer":"HITA"},
+      { "id": "a4", "rank": 2, "name": "眉间雪", "singer":"HITA"},
+      { "id": "a4", "rank": 3, "name": "眉间雪", "singer":"HITA"},
+      { "id": "a4", "rank": 4, "name": "眉间雪", "singer":"HITA"},
+      { "id": "a4", "rank": 5, "name": "眉间雪", "singer":"HITA"},
+      { "id": "a4", "rank": 6, "name": "眉间雪", "singer":"HITA"},
+      { "id": "a4", "rank": 7, "name": "眉间雪", "singer":"HITA"},
+      { "id": "a4", "rank": 8, "name": "眉间雪", "singer":"HITA"},
+      { "id": "a4", "rank": 9, "name": "眉间雪", "singer":"HITA"},
+      { "id": "a4", "rank": 10, "name": "眉间雪", "singer":"HITA"}
+
+    ]
+
+  ],
+  [
+    {
+      "id":"a5",
+      "coverUrl":"https://ooo.0o0.ooo/2017/06/28/595325a955286.png",
+      "avatarUrl":"https://ooo.0o0.ooo/2017/07/03/5959a41881fce.png",
+      "title":"TRAP RAP ：令人上瘾的诡谲黑暗节拍",
+      "author":"托你",
+      "firstLabel":"rap",
+      "secondLabel":"节奏",
+      "thirdLabel":"欧美",
+      "introduce":"简介：暗黑却又不失性感，唯美却也让人上瘾，就是这个歌单，欢迎收藏、评论。"
+    },
+    [
+      { "id": "a5", "rank": 1, "name": "lighters", "singer":"Bround Mars"},
+      { "id": "a5", "rank": 2, "name": "lighters", "singer":"Bround Mars"},
+      { "id": "a5", "rank": 3, "name": "lighters", "singer":"Bround Mars"},
+      { "id": "a5", "rank": 4, "name": "lighters", "singer":"Bround Mars"},
+      { "id": "a5", "rank": 5, "name": "lighters", "singer":"Bround Mars"},
+      { "id": "a5", "rank": 6, "name": "lighters", "singer":"Bround Mars"},
+      { "id": "a5", "rank": 7, "name": "lighters", "singer":"Bround Mars"},
+      { "id": "a5", "rank": 8, "name": "lighters", "singer":"Bround Mars"},
+      { "id": "a5", "rank": 9, "name": "lighters", "singer":"Bround Mars"},
+      { "id": "a5", "rank": 10, "name": "lighters", "singer":"Bround Mars"}
+
+    ]
+
+  ],
+  [
+    {
+      "id":"a6",
+      "coverUrl":"https://ooo.0o0.ooo/2017/06/28/595325a956892.png",
+      "avatarUrl":"https://ooo.0o0.ooo/2017/07/03/5959a5fa4db12.png",
+      "title":"夏至未至 电视剧原声带",
+      "author":"狐狸锅锅",
+      "firstLabel":"夏天",
+      "secondLabel":"唯美",
+      "thirdLabel":"女声",
+      "introduce":"简介：夏至未至》是由上海辛迪加影视有限公司 、湖南卫视等联合出品，根据郭敬明同名小说改编的青春偶像剧，由陈学冬、郑爽、白敬亭、夏梓桐、柴碧云、庞瀚辰、王玉雯等联袂主演。"
+    },
+    [
+      { "id": "a6", "rank": 1, "name": "那些年", "singer":"胡夏"},
+      { "id": "a6", "rank": 2, "name": "那些年", "singer":"胡夏"},
+      { "id": "a6", "rank": 3, "name": "那些年", "singer":"胡夏"},
+      { "id": "a6", "rank": 4, "name": "那些年", "singer":"胡夏"},
+      { "id": "a6", "rank": 5, "name": "那些年", "singer":"胡夏"},
+      { "id": "a6", "rank": 6, "name": "那些年", "singer":"胡夏"},
+      { "id": "a6", "rank": 7, "name": "那些年", "singer":"胡夏"},
+      { "id": "a6", "rank": 8, "name": "那些年", "singer":"胡夏"},
+      { "id": "a6", "rank": 9, "name": "那些年", "singer":"胡夏"},
+      { "id": "a6", "rank": 10, "name": "那些年", "singer":"胡夏"}
+
+    ]
+
+  ]
+
+]
