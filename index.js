@@ -87,7 +87,13 @@ $(function(){
         {"id":700, "name":"岁月神偷"},
         {"id":800, "name":"Faded"},
         {"id":900, "name":"春风十里"},
-        {"id":1000, "name":"历历万乡"}
+        {"id":1000, "name":"历历万乡"},
+        {"id":"a1","name":"暧昧"},
+        {"id":"a2","name":"锦鲤抄"},
+        {"id":"a3","name":"cry on my shoulder"},
+        {"id":"a4","name":"眉间雪"},
+        {"id":"a5","name":"lighters"},
+        {"id":"a6","name":"那些年"}
 
       ];
       let result = database.filter(function(i){
