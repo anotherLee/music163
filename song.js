@@ -2,15 +2,20 @@ $(function(){
 
   var {search} = location;
   console.log('search: ' + search);
-  var queryId = Number(search.split('=')[1]);
+  var queryId = search.split('=')[1];
   console.log('queryId: ' + queryId);
   var requestPath
-  if(queryId >= 100){
-    requestPath = './hotsongs.json';
+  if(queryId.indexOf('a') >=0){
+    requestPath = './albumsong.json';
   }else{
-    requestPath = './songs.json';
+    if(queryId >= 100){
+      requestPath = './hotsongs.json';
+    }else{
+      requestPath = './songs.json';
+    }
   }
-
+  console.log(queryId)
+  console.log(typeof queryId)
   $.get(requestPath).then(function(response){
     let item = response.filter(function(i){
       if(queryId === i.id){
