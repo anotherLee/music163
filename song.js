@@ -9,8 +9,10 @@ $(function(){
     requestPath = './albumsong.json';
   }else{
     if(queryId >= 100){
+      queryId = Number(queryId)
       requestPath = './hotsongs.json';
     }else{
+      queryId = Number(queryId)
       requestPath = './songs.json';
     }
   }
