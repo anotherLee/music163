@@ -40,7 +40,7 @@ $(function(){
               <span class="rank">${i.rank}</span>
               <div class="songInformation">
                 <h3>
-                  <a href="main.html?id=" + ${i.id} class="songName">
+                  <a href="main.html?id=${i.id}" class="songName">
                     ${i.name}
                   </a>
                 </h3>
